@@ -1,11 +1,13 @@
-
-# Force Dart as the main language
+# Override GitHub language detection
 *.dart linguist-detectable=true
-*.dart linguist-language=Dart
+*.cpp linguist-detectable=false
+*.cc linguist-detectable=false
+*.h linguist-detectable=false
+*.hpp linguist-detectable=false
 
-# Ignore platform-specific code
-android/* linguist-vendored
-ios/* linguist-vendored
-windows/* linguist-vendored
-linux/* linguist-vendored
-macos/* linguist-vendored
+# Mark generated files as such
+ios/* linguist-generated=true
+android/app/src/main/java/* linguist-generated=true
+windows/* linguist-generated=true
+linux/* linguist-generated=true
+macos/* linguist-generated=true
